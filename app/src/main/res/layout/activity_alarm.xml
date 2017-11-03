@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.sajiblocked.assistme.alarm.AlarmActivity">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:text="Give the time in 24 hours format"/>
+
+    <EditText
+        android:id="@+id/hour"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:hint="Alarm Hour"/>
+
+
+    <EditText
+        android:id="@+id/minute"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:hint="Alarm Minute" />
+
+
+    <TextView
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:text="Alarm set on :"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Set Alarm"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/setAlarm"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Exit"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/exit"/>
+
+</LinearLayout>
