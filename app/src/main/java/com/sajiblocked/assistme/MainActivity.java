@@ -11,7 +11,7 @@ import android.widget.TextView;
 import com.sajiblocked.assistme.alarm.AlarmActivity;
 
 /**
- * Created by Shahriar Hossain Sajib on 10/28/2017.
+ * Created by Shahriar Hossain Sajib.
  */
 
 public class MainActivity extends AppCompatActivity {

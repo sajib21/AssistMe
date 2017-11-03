@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Assist Me</string>
+    <string name="diary">Diary</string>
+    <string name="to_do_list">To Do List</string>
+    <string name="alarm">Alarm</string>
+    <string name="wallet">Wallet</string>
 </resources>
