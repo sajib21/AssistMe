@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.sajiblocked.assistme.alarm.AlarmActivity;
+
 /**
  * Created by Shahriar Hossain Sajib on 10/28/2017.
  */
@@ -19,18 +21,17 @@ public class MainActivity extends AppCompatActivity {
     Button diaryButton;
     Button todoListButton;
     Button walletButton;
+    Button alarmButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //test = (TextView) findViewById(R.id.test);
-
-        System.out.println("FIRST");
 
         diaryButton = (Button) findViewById(R.id.button_diary);
         todoListButton = (Button) findViewById(R.id.button_todolist);
         walletButton = (Button) findViewById(R.id.button_wallet);
+        alarmButton = (Button) findViewById(R.id.button_alarm);
 
         diaryButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +47,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        alarmButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoAlarm(v);
+            }
+        });
+
         walletButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,17 +63,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void gotoDiary(View view) {
-        System.out.println("cholse");
-
         Intent intent = new Intent(this, DiaryUIActivity.class);
         startActivity(intent);
     }
 
     void gotoToDoList(View view) {
-        //test.setText("cholse");
-
         Intent intent = new Intent(this, TodoListActivity.class);
         startActivity(intent);
+    }
+
+    void gotoAlarm(View view) {
+        startActivity(new Intent(this, AlarmActivity.class));
     }
 
     void gotoWallet(View view) {
