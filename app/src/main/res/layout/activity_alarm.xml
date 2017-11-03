@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -20,7 +19,7 @@
         android:paddingRight="5dp"
         android:paddingTop="5dp"
         android:paddingLeft="5dp"
-        android:text="Give the time in 24 hours format"/>
+        android:text="@string/give_the_time_in_24_hours_format"/>
 
     <EditText
         android:id="@+id/hour"
@@ -31,7 +30,7 @@
         android:paddingRight="5dp"
         android:paddingTop="5dp"
         android:paddingLeft="5dp"
-        android:hint="Alarm Hour"/>
+        android:hint="@string/alarm_hour"/>
 
 
     <EditText
@@ -43,7 +42,7 @@
         android:paddingTop="5dp"
         android:paddingLeft="5dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:hint="Alarm Minute" />
+        android:hint="@string/alarm_minute" />
 
 
     <TextView
@@ -55,19 +54,19 @@
         android:paddingRight="5dp"
         android:paddingTop="5dp"
         android:paddingLeft="5dp"
-        android:text="Alarm set on :"/>
+        android:text="@string/alarm_set_on"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:text="Set Alarm"
+        android:text="@string/set_alarm"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/setAlarm"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:text="Exit"
+        android:text="@string/exit"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/exit"/>
 

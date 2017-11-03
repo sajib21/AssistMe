@@ -55,7 +55,7 @@ public class AlarmActivity extends AppCompatActivity {
 
 
                 /////////   System Time
-                int sec = 0;
+                int sec;
                 int CurrentMinutes = CurrentDateTime.get(Calendar.MINUTE);
                 int CurrentHours = CurrentDateTime.get(Calendar.HOUR);
                 int Ampm = CurrentDateTime.get(Calendar.AM_PM);
@@ -76,8 +76,8 @@ public class AlarmActivity extends AppCompatActivity {
                 }
 
 
-                String hour_str = String.valueOf(h).toString();
-                String min_str = String.valueOf(min).toString();
+                String hour_str = String.valueOf(h);
+                String min_str = String.valueOf(min);
 
                 if(h<10)
                     hour_str="0"+hour_str;
@@ -95,7 +95,7 @@ public class AlarmActivity extends AppCompatActivity {
                 Intent intent = new Intent(AlarmActivity.this,Alarm_manager.class);
                 AlarmManager alarmManager = (AlarmManager)getSystemService(ALARM_SERVICE);
                 PendingIntent pendingIntent = PendingIntent.getBroadcast(getApplicationContext(),0,intent,0);
-                alarmManager.set(alarmManager.RTC_WAKEUP,System.currentTimeMillis()+sec*1000,pendingIntent);
+                alarmManager.set(AlarmManager.RTC_WAKEUP,System.currentTimeMillis()+sec*1000,pendingIntent);
 
                 //Toast.makeText(getApplicationContext(), "HOISE " , Toast.LENGTH_SHORT).show();
             }

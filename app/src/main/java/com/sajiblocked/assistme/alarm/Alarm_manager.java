@@ -16,7 +16,7 @@ public class Alarm_manager extends BroadcastReceiver {
         Toast.makeText(context,"Alarm is on",Toast.LENGTH_LONG).show();
         Intent ring_intent = new Intent(context, RingtonePlayingService.class);
         context.startService(ring_intent);
-        Vibrator vibrator = (Vibrator)context.getSystemService(context.VIBRATOR_SERVICE);
+        Vibrator vibrator = (Vibrator)context.getSystemService(Context.VIBRATOR_SERVICE);
         vibrator.vibrate(3000);
     }
 }

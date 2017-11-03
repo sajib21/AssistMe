@@ -4,4 +4,10 @@
     <string name="to_do_list">To Do List</string>
     <string name="alarm">Alarm</string>
     <string name="wallet">Wallet</string>
+    <string name="give_the_time_in_24_hours_format">Give the time in 24 hours format</string>
+    <string name="alarm_hour">Alarm Hour</string>
+    <string name="alarm_minute">Alarm Minute</string>
+    <string name="alarm_set_on">Alarm set on :</string>
+    <string name="set_alarm">Set Alarm</string>
+    <string name="exit">Exit</string>
 </resources>
